@@ -4,7 +4,7 @@
 
 #include <iostream>
 using namespace std;
-const double pi = 3.14;
+const double pi = 3.141592653589;
 
 class shape
 {
@@ -15,7 +15,8 @@ protected:
 public:
     ~shape()
     {
-        cout << "Shape destroyed" << endl << endl;
+        cout << "Shape destroyed" << endl
+             << endl;
     }
     virtual void Area() = 0; // Pure virtual function to enforce derived classes to implement this method
 
